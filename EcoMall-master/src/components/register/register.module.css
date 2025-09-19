@@ -1,0 +1,164 @@
+/* src/styles/Register.module.css */
+.registerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.registerCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.registerCard h2 {
+  color: #46c919;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 32px;
+  font-size: 15px;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.inputGroup input:focus {
+  border-color: #46c919;
+  box-shadow: 0 0 0 2px rgba(70, 201, 25, 0.2);
+  outline: none;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 16px;
+}
+
+.terms {
+  text-align: left;
+  margin: 8px 0 16px;
+  font-size: 13px;
+  color: #555;
+}
+
+.termsLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.termsLabel input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.termsLink {
+  color: #46c919;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 4px;
+}
+
+.termsLink:hover {
+  text-decoration: underline;
+}
+
+.registerButton {
+  background-color: #46c919;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.registerButton:hover {
+  background-color: #3ab517;
+  transform: translateY(-1px);
+}
+
+.arrowIcon {
+  transition: transform 0.3s;
+}
+
+.registerButton:hover .arrowIcon {
+  transform: translateX(4px);
+}
+
+.loginLink {
+  margin-top: 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+.loginText {
+  color: #46c919;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-left: 4px;
+}
+
+.loginText:hover {
+  color: #3ab517;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .registerCard {
+    padding: 30px 20px;
+    margin: 0 10px;
+  }
+  
+  .inputGroup input {
+    padding: 12px 16px 12px 40px;
+  }
+  
+  .registerButton {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,157 @@
+/* src/aggregate/ecoFriendlyServices/ecoFriendlyServices.module.css */
+.servicesPage {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .heroSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('/images/eco-services-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+  }
+  
+  .heroSection h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSection p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .servicesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+  }
+  
+  .servicesContainer h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2E7D32;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .serviceCard {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .iconContainer {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: rgba(76, 175, 80, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .serviceIcon {
+    font-size: 2rem;
+    color: var(--service-color);
+  }
+  
+  .serviceCard h3 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .serviceCard p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .learnMoreBtn {
+    background: transparent;
+    border: 2px solid var(--service-color);
+    color: var(--service-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .learnMoreBtn:hover {
+    background: var(--service-color);
+    color: white;
+  }
+  
+  .ctaSection {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 50px;
+  }
+  
+  .ctaSection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2E7D32;
+  }
+  
+  .ctaSection p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .contactBtn {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contactBtn:hover {
+    background: #1B5E20;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .servicesGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .heroSection h1 {
+      font-size: 2.2rem;
+    }
+  
+    .servicesContainer h2,
+    .ctaSection h2 {
+      font-size: 2rem;
+    }
+  }
